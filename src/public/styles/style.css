@@ -1,0 +1,118 @@
+:root {
+  --bg-primary: #0f0f23;
+  --bg-card: #1a1a2e;
+  --accent: #e94560;
+  --accent-hover: #ff6b6b;
+  --text: #eaeaea;
+  --text-muted: #a0a0a0;
+  --border: #2d2d44;
+  --success: #4ade80;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f23 0%, #16213e 50%, #1a1a2e 100%);
+  min-height: 100vh;
+  padding: 50px;
+  font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: var(--text);
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji {
+  width: 72px;
+}
+
+/* Form styles */
+.form-section {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: var(--bg-card);
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border);
+}
+
+.form-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+}
+
+.form-message {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.form-message.success {
+  background: rgba(74, 222, 128, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(15, 15, 35, 0.6);
+  color: var(--text);
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.2);
+}
+
+.form-btn {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: var(--accent);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.form-btn:hover {
+  background: var(--accent-hover);
+}
+
+.form-btn:active {
+  transform: scale(0.98);
+}

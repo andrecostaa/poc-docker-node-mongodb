@@ -1,0 +1,15 @@
+extends main-layout.pug
+
+block content
+    section.form-section
+        h2.form-title Cadastre-se
+        if success
+            p.form-message.success Cadastro realizado com sucesso!
+        form.form(method="POST" action="/users/register")
+            .form-group
+                label(for="name") Nome
+                input#name(type="text" name="name" placeholder="Digite seu nome" required)
+            .form-group
+                label(for="email") Email
+                input#email(type="email" name="email" placeholder="Digite seu email" required)
+            button.form-btn(type="submit") Criar

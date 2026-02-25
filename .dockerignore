@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.env*
+!.env.example
+build
+*.md
+.DS_Store
+.agent
+.env.local

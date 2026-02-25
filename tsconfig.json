@@ -1,0 +1,14 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build",
+    "isolatedModules": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "nodenext",
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true
+  }
+}
