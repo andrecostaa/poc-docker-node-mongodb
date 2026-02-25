@@ -27,7 +27,7 @@
     "validate": "npm run lint && npx tsc --noEmit && npm test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andre Luis A. Costa",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^5.0.6",
